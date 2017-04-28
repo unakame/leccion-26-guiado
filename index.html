@@ -9,28 +9,31 @@
 </head>
 <body>
   <div class="box">
-    <p>Nombre:</p>
-    <input type="text" autofocus="" id="name">
-    <p>Apellido:</p>
-    <input type="text" id="lastname">
-    <p>DNI:</p>
-    <input type="number" id="dni">
-    <p>Celular:</p>
-    <input type="number" id="cell">
-    <p>Teléfono fijo:</p>
-    <input type="number" id="number">
-    <p>Fecha de nacimiento:</p>
-    <input type="date" id="birthdate">
-    <p>Contraseña:</p>
-    <input type="password" id="passphrase">
-    <p>Confirmación de contraseña:</p>
-    <input type="password" id="passphrase2"><br>
-    <p>Comentarios:</p>
-    <textarea rows="5" cols="20" placeholder="Cuéntanos tu experiencia" id="comments"></textarea><br>
-    <input type="checkbox">
-    <p>Deseo recibir info</p>
-    <button id="register">Registrarme</button>
+     <form class="form-signup" id="formu">
+     <p>Nombre:</p>
+     <input type="text" autofocus="" id="name" required>
+     <p>Apellido:</p>
+     <input type="text" id="lastname" required>
+     <p>DNI:</p>
+     <input type="number" id="dni" required>
+     <p>Celular:</p>
+     <input type="number" id="cell" required>
+     <p>Teléfono fijo:</p>
+     <input type="number" id="number" required="">
+     <p>Fecha de nacimiento:</p>
+     <input type="date" id="birthdate" required>
+     <p>Contraseña:</p>
+     <input type="password" id="passphrase" required>
+     <p>Confirmación de contraseña:</p>
+     <input type="password" id="passphrase2" required><br>
+     <p>Comentarios:</p>
+     <textarea rows="5" cols="20" placeholder="Cuéntanos tu experiencia" id="comments"></textarea><br>
+     <input type="checkbox">
+     <p>Deseo recibir info</p>
+     <button  class="btn btn-lg btn-primary btn-block submit-btn" type="submit" onclick="validateForm()">Registrarme</button>
+    </form>
    </div>
-   <scrip src="assets/js/main.js"></scrip>
+   <script src="assets/js/main.js"></script>
+   <script type='text/javascript' src='assets/js/donottouchthisfile.js'></script>
 </body>
 </html>
